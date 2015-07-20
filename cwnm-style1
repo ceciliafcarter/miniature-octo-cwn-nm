@@ -1,0 +1,156 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css";
+
+@media screen and (max-width:1280px){
+  #homecontentarea
+  {
+    border:solid #000;
+  }
+  #middlehome
+  {
+    border:solid #000;
+  }
+  #middlehomeright
+  {
+    border:solid #000;
+  }
+}
+
+@media screen and (max-width:800px)
+{
+  div#searchmover
+  {
+    left:460px;
+    top: -10px;
+  }
+  
+  /*Admin and social media links from the upper-right hand corner*/
+  td.adminlinks
+  {
+    position: absolute;
+    left:450px;
+    top:25px;
+  }
+   
+  td.adminlinks a
+  {
+    font-size:12px;
+  }
+  
+  td.adminlinks img
+  {
+    width: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 360px)
+{
+  .s4-bodyContainer, .s4-ca
+  {
+    margin:0;
+    padding:0;
+  }
+  /*Settings for CushwakeNm logo*/
+  .s4-socialdata-notif
+  {
+    position: absolute;
+    padding:0;
+    margin-bottom: 130px;
+  }
+  .s4-socialdata-notif img
+  {
+    width: 300px;
+    -ms-interpolation-mode: bicubic;
+  }
+  
+  /*Admin and social media links from the upper-right hand corner*/
+  td.adminlinks
+  {
+    position: absolute;
+    left:0px;
+    padding:0;
+    top:60px;
+  }
+  
+  td.adminlinks
+  {
+    display: none;
+  }
+  /*
+  td.adminlinks a
+  {
+    font-size:10px;
+  }
+  
+  td.adminlinks img
+  {
+    width: 20px;
+  }
+  */
+  
+  /*Search button*/
+  div#searchmover
+  {
+    display: none;
+  }
+  /*
+  div#searchmover
+  {
+    left:0;
+    top:80px;
+  }
+  */
+  #menu
+  {
+    float:none;
+    padding:0;
+    margin-top: 90px;
+    
+        
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+  }
+  
+  /* Reset global navigation item formatting */
+  ul[id$="menu"] li a.drop,  /* First level of nav */
+  ulul[id$=menu] .simple li a.drop  /* Second level of nav */ {
+    min-width: 100px;  /* Optional */
+    width: auto;   /* Can also set to an absolute value */
+    padding: 0;
+    border-top: 0;
+    margin-right: 0;
+    display: block;
+    font-size: .8em;
+    line-height: 1.5;
+    position: relative;
+  }
+  
+  ul[id$="menu"] li a.drop {
+    padding-left:0%;
+  }
+  ul[id$="menu"] li > a:last-child {
+    border-bottom: 0;
+  }
+  ul[id$="menu"] li a.drop:hover  {
+    background: #fff;
+  }
+  
+  /* Reset positioning of level 2 navigation items */
+  ulul[id$=menu] .simple a.drop
+  {
+    border: 0;
+    box-shadow: none;
+    left: 0;
+    top: 0;
+    position: relative;
+    padding: 0;
+    width: auto !important;  /* !important required to override inline style */
+    left: 0 !important;  /* !important required to override inline style */
+    top: 0 !important;  /* !important required to override inline style */
+  }
+
+}

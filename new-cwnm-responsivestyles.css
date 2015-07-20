@@ -1,0 +1,181 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css";
+@media screen and (max-width: 1044px) {
+    /* Hide unnecessary page elements */
+    .ms-core-listMenu-horizontalBox .ms-listMenu-editLink  /* Global navigation "Edit Links" when managed navigation is in use */ {
+        display: none;
+    }
+ 
+    /* Undo the crazy that SharePoint creates with table display set to DIVs*/
+    #s4-titlerow .ms-table,
+    #s4-titlerow .ms-tableRow,
+    #s4-titlerow .ms-tableCell {
+        display: block;
+    }
+ 
+    /* Site logo wrapper */
+    #siteIcon {
+        float: none;  /* Remove OOTB float - this allows title row elements to return to typical block elements along with the table display changes above */
+        text-align: left;  /* Alter OOTB alignment */
+    }
+ 
+    /* Page title text */
+    #pageTitle {
+        position: absolute;  /* Remove from content flow and create precise placement based on parent container */
+        top: 30px;  /* Position from top */
+        left: 220px;   /* Positioning from left */
+    }
+ 
+    /* Top nav bar size */
+    .ms-breadcrumb-box {
+        height: 30px;   /* Alter OOTB height */
+    }
+ 
+    /* Top nav bar placement & formatting */
+    .ms-breadcrumb-top > .ms-core-navigation {
+        display: block;  /* Force respect of some declarations */
+        margin-top: 20px;  /* Create space between the site logo/title and nav bar */
+    }
+ 
+    /* Search placement */
+    .ms-mpSearchBox.ms-floatRight,
+    #searchInputBox  {
+        float: none;  /* Remove OOTB float - this allows the search to move to the left under the top nav bar */
+    } 
+ 
+    /* Adjust padding for content containers */
+    #s4-bodyContainer {
+        padding-bottom: 60px;  /* Alter OOTB padding */
+    }
+    #contentRow {
+        padding-top: 80px;  /* Alter OOTB padding */
+    }
+
+    #s4-statusbarcontainer
+    {
+        display: none;
+    }
+    div#searchmover
+    {
+        left:655px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /*move the Search box*/
+     div#searchmover
+    {
+       left:600px;
+    }   
+}
+@media screen and (max-width: 825px) {
+    div#searchmover
+    {
+       left:510px;        
+    }   
+    
+    #menu li
+    {
+        margin:7px 5px 0 0;
+    }
+}
+@media screen and (max-width: 740px) {
+    td.adminlinks
+    {
+        text-align: left;
+    }   
+    
+    div#searchmover
+    {
+        left:460px;
+        top: 25px;
+    }
+    #menu
+    {
+        float: none;  /* Remove OOTB float so content appears beneath the nav */
+        /*border: 1px solid #999;*/  /* Bounding box */
+        /*border-radius: 15px;*/  /* Rounded corners */
+        padding: 0;  /* Add padding to space content from border */
+        margin-bottom: 0px;  /* Remove space between left nav and content underneath */
+    }
+
+
+    #menu li a
+    {
+        margin:0;
+        font-size: larger;
+    }
+    
+    /*Hide the content area for now - TODO display content area
+    .s4-ca
+    {
+        display: none;
+    }*/
+}
+
+@media screen and (max-width: 414px){ /*Apple iPhone 6 Plus*/
+
+    div#searchmover
+    {
+        left:90px;
+        top: -5px;
+    }
+    
+    #menu
+    {
+        float: none;  /* Remove OOTB float so content appears beneath the nav */
+        /*border: 1px solid #999;*/  /* Bounding box */
+        /*border-radius: 15px;*/  /* Rounded corners */
+        padding: 0;  /* Add padding to space content from border */
+        margin-bottom: 0px;  /* Remove space between left nav and content underneath */
+        
+        font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        color: #023365;
+        height: 200px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        
+    }
+    
+    /*Hide drop down arrow*/
+    #menu a.drop 
+    {
+        background: none no-repeat 0;
+        padding-right: 5px;
+    }
+    /*Hide child level nav items*/
+    #menu div.dropdown_1column
+    {
+        display: none;
+    }
+    
+    /* Remove unnecessary branding from global nav */
+    #menu {
+        border: 0;
+    }
+    
+   /* Add "Menu" text before nav list - necessary to prevent mobile user accidentally jumping to first nav item when menu is activated */
+    #menu:first-child:before {
+        content: "Menu";
+        display: block;
+        padding: 5%;
+        background: #ccc;
+    }
+    /* Reset global navigation item formatting */
+    #menu li.static a.static,  /* First level of nav */
+    #menu li.static a.dynamic  /* Second level of nav */ {
+        min-width: 100px;  /* Optional */
+        width: auto;   /* Can also set to an absolute value */
+        padding: 10% 15%;
+        border-top: 0;
+        border-bottom: 1px solid #dfdfdf;
+        margin-right: 0;
+        display: block;
+        font-size: .8rem;
+        line-height: 1.5;
+        position: relative;
+    }
+}
