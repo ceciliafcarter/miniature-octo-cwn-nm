@@ -557,31 +557,6 @@ div#homerightcol .ms-WPTitle
 	padding: 7px 4px 4px 0px;
 }
 	
-/* MiddleHome Webpart Zone styling */
-div.cwn-WPHeader
-{
-  border: thin solid #fff;
-}
-
-div.cwn-WPHeaderContent
-{
-  float: left;
-}
-h3.cwn-WPHeaderTitle nobr>span
-{
-  font-family: Helvetica,Helvetica Neue,Arial Sans-serif;
-  font-weight: normal;
-}	
-	
-.ms-rteElement-P
-{
-  font-size: 1.4em;
-}
-div#WebPartWPQ3 h1
-{
-  font-size: 2.3em;
-  font-weight: normal;
-}
 
 /*---@media screen and (-webkit-min-device-pixel-ratio:0) {
 
@@ -875,7 +850,34 @@ div.groupheader {
 	text-decoration: underline;
 }
 
-/*Responsive styling specific for media screen*/
+/*---------------------- Ticket 18032 --------------------*/
+/* MiddleHome Webpart Zone styling */
+div.cwn-WPHeader
+{
+  border: thin solid #fff;
+}
+
+div.cwn-WPHeaderContent
+{
+  float: left;
+}
+h3.cwn-WPHeaderTitle nobr>span
+{
+  font-family: Helvetica,Helvetica Neue,Arial Sans-serif;
+  font-weight: normal;
+}	
+	
+.ms-rteElement-P
+{
+  font-size: 1.4em;
+}
+div#WebPartWPQ3 h1
+{
+  font-size: 2.3em;
+  font-weight: normal;
+}
+
+/*Responsive styling specific to media screen*/
 
 @media screen and (min-width: 1800px)
 {
