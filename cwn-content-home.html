@@ -1,0 +1,396 @@
+
+<div id="s4-ribbonrow" class="s4-pr s4-ribbonrowhidetitle" style="display: none; height: 44px;">
+	<div id="s4-ribboncont">
+	
+		<!-- ribbon starts here -->
+		<div class="ms-cui-ribbonTopBars"><div class="ms-cui-topBar1"></div><div class="ms-cui-topBar2"><div id="RibbonContainer-TabRowLeft" class="ms-cui-TabRowLeft ms-siteactionscontainer s4-notdlg"><!-- site actions --><span class="ms-siteactionsmenu" id="siteactiontd"></span><!-- global navigation dhtml popout menu --><span class="s4-breadcrumb-anchor"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><a id="GlobalBreadCrumbNavPopout-anchor" onclick="CoreInvoke('callOpenBreadcrumbMenu', event, 'GlobalBreadCrumbNavPopout-anchor', 'GlobalBreadCrumbNavPopout-menu', 'GlobalBreadCrumbNavPopout-img', 's4-breadcrumb-anchor-open', 'ltr', '', false); return false;" onmouseover="" onmouseout="" title="Navigate Up" href="javascript:;" style="display:inline-block;height:16px;width:16px;"><img src="/_layouts/images/fgimg.png" alt="Navigate Up" style="border:0;position:absolute;left:-0px !important;top:-112px !important;"></a></span></span><div class="ms-popoutMenu s4-breadcrumb-menu" id="GlobalBreadCrumbNavPopout-menu" style="display:none;"><div class="s4-breadcrumb-top">
+							<span class="s4-breadcrumb-header">This page location is:</span></div><ul class="s4-breadcrumb">
+	<li class="s4-breadcrumbRootNode"><span class="s4-breadcrumb-arrowcont"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust s4-breadcrumb"><img src="/_layouts/images/fgimg.png" alt="" style="border-width:0px;position:absolute;left:-0px !important;top:-353px !important;"></span></span><a class="s4-breadcrumbRootNode" href="/">CushWakeNM</a><ul class="s4-breadcrumbRootNode"><li class="s4-breadcrumbNode"><span class="s4-breadcrumb-arrowcont"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust s4-breadcrumb"><img src="/_layouts/images/fgimg.png" alt="" style="border-width:0px;position:absolute;left:-0px !important;top:-353px !important;"></span></span><a class="s4-breadcrumbNode" href="http://dev.cushwakenm.com/_layouts/listform.aspx?ListId=%7B4B759AC9%2D0A3A%2D4B17%2DA8A1%2D84A23ED24539%7D&amp;PageType=0">Pages</a><ul class="s4-breadcrumbNode"><li class="s4-breadcrumbCurrentNode"><span class="s4-breadcrumb-arrowcont"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust s4-breadcrumb"><img src="/_layouts/images/fgimg.png" alt="" style="border-width:0px;position:absolute;left:-0px !important;top:-353px !important;"></span></span><span class="s4-breadcrumbCurrentNode">default</span></li></ul></li></ul></li>
+</ul></div><!-- save button at top of ribbon --></div><div id="RibbonContainer-TabRowRight" class="ms-cui-TabRowRight s4-trc-container s4-notdlg"><!-- GlobalSiteLink0 delegate - the variation selector / shows nothing by default otherwise -->
+<!-- Welcome / Login control --><div class="s4-trc-container-menu"><div>
+<a id="ctl00_IdWelcome_ExplicitLogin" class="s4-signInLink" href="http://dev.cushwakenm.com/_layouts/Authenticate.aspx?Source=%2FPages%2Fdefault%2Easpx" style="display:inline;">Sign In</a>
+<!-- MultiLingual User Interface menu -->
+<script type="text/javascript">
+// <![CDATA[
+function OnSelectionChange(value)
+{
+	var today = new Date();
+	var oneYear = new Date(today.getTime() + 365 * 24 * 60 * 60 * 1000);
+	var url = window.location.href;
+	document.cookie = "lcid=" + value + ";path=/;expires=" + oneYear.toGMTString();
+	window.location.href = url;
+}
+// ]]>
+</script>
+
+</div></div><!-- GlobalSiteLink2 delegate default shows nothing --><!-- link to launch developer dashboard if its activated by admin --><span><span class="s4-devdashboard"></span></span></div></div></div>
+<script type="text/javascript">
+//<![CDATA[
+var g_commandUIHandlers = {"name":"CommandHandlers","attrs":{},"children":[]};
+//]]>
+</script>
+	  
+	  <!-- end main ribbon control -->
+	</div>
+
+    <!-- dynamic notification area -->
+	<div id="notificationArea" class="s4-noti"></div>
+
+    <!-- old navigation delegate? -->
+	
+			
+<span id="ctl00_SPNavigation_ctl00_publishingConsoleV4_publishingRibbon"></span>
+
+
+
+	
+	
+	<!-- top web part panel -->
+	<div id="WebPartAdderUpdatePanelContainer">
+		<div id="ctl00_WebPartAdderUpdatePanel">
+	
+				<span id="ctl00_WebPartAdder"></span>
+			
+</div>
+	</div>
+</div>
+	
+
+<!-- =====  End Ribbon and other Top Content ============================================================ -->
+
+
+<!-- =====  Start Scrolling Body Area ============================================================ -->
+
+<!-- these two div id's are used to setup the main scrolling page area, they should stay if you are sticking the ribbon to the top -->
+<div style="height: 837px; width: 1706px;" id="s4-workspace">  <!-- class="s4-nosetwidth" NOTE: s4-nosetwidth is used when you are setting a fixed page width in css, remove for 100% -->
+  <div id="s4-bodyContainer">
+  
+  <!-- id="mso_contentdiv" required, helps SharePoint put the web part editing pane in the main body on the right, you can move the ID if needed -->
+  <div id="ctl00_MSO_ContentDiv">
+
+	<!-- link back to homepage, SiteLogoImage gets replaced by the Site Icon, you can hard code this so that its not overridden by the Site Icon or even remove -->
+	<div class="s4-notdlg"><!-- NOTE: any time you see s4-notdlg, this element will be hidden from SharePoint dialog windows  -->
+		<table style="width: 100%">
+			<tbody><tr>
+				<td class="s4-socialdata-notif">
+		<a href="/"><img src="/style%20library/images/cwnm_logo.png" alt="CushWakeNM" style="border-width:0px;"></a>	
+				</td>
+				<td class="adminlinks">
+					<a href="/careers/pages/default.aspx">CAREERS</a> | 
+					<a href="/aboutus/pages/contact-us.aspx">CONTACT US</a>&nbsp; &nbsp; &nbsp;
+					<a href="https://twitter.com/CW_NorthMarq" target="_blank"><img src="../../../PublishingImages/Twitter_logo_blue_30px.png" alt="Twitter logo"></a>
+					 &nbsp; 
+					<a href="https://www.facebook.com/CWNorthMarq" target="_blank"><img src="../../../PublishingImages/FBiconimage_30px.png" alt="Facebook Image"></a> &nbsp; 
+					<a href="https://www.linkedin.com/company/cushman-&amp;-wakefield-northmarq" target="_blank"><img src="../../../PublishingImages/In-2C-28px-R.png" alt="LinkedIn Image"></a>	
+				</td>
+			</tr>
+		</tbody></table>
+		   <!-- search box loads from delegate, style with CSS-->
+			<div id="searchmover">
+			
+				<table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td valign="top"><div webpartid="00000000-0000-0000-0000-000000000000" haspers="true" id="WebPartWPQ1" width="100%" class="noindex" onlyformepart="true" allowdelete="false" style=""><div id="SRSB"> <div>
+			<input name="ctl00$PlaceHolderSearchArea$ctl01$ctl00" id="ctl00_PlaceHolderSearchArea_ctl01_ctl00" value="http://dev.cushwakenm.com" type="hidden"><table class="ms-sbtable ms-sbtable-ex s4-search" border="0" cellpadding="0" cellspacing="0">
+				<tbody><tr class="ms-sbrow">
+					<td class="ms-sbcell"><input name="InputKeywords" value="Search this site..." maxlength="200" id="ctl00_PlaceHolderSearchArea_ctl01_S3031AEBB_InputKeywords" accesskey="S" title="Search..." class="ms-sbplain s4-searchbox-QueryPrompt" alt="Search..." onkeypress="javascript: return S3031AEBB_OSBEK(event);" onfocus="if (document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value =='0') {this.value=''; if (this.className == 's4-searchbox-QueryPrompt') this.className = ''; else this.className = this.className.replace(' s4-searchbox-QueryPrompt',''); document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value=1;}" onblur="if (this.value =='') {this.value='Search this site...'; if (this.className.indexOf('s4-searchbox-QueryPrompt') == -1) this.className += this.className?' s4-searchbox-QueryPrompt':'s4-searchbox-QueryPrompt'; document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value = '0'} else {document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value='1';}" style="width:170px;" type="text"></td><td class="ms-sbgo ms-sbcell"><a id="ctl00_PlaceHolderSearchArea_ctl01_S3031AEBB_go" title="Search" href="javascript:S3031AEBB_Submit()"><img title="Search" onmouseover="this.src='\u002f_layouts\u002fimages\u002fgosearchhover15.png'" onmouseout="this.src='\u002f_layouts\u002fimages\u002fgosearch15.png'" class="srch-gosearchimg" alt="Search" src="/_layouts/images/gosearch15.png" style="border-width:0px;"></a></td><td class="ms-sbLastcell"></td>
+				</tr>
+			</tbody></table><input name="ctl00$PlaceHolderSearchArea$ctl01$ctl04" id="ctl00_PlaceHolderSearchArea_ctl01_ctl04" value="0" type="hidden">
+		</div></div></div></td>
+	</tr>
+</tbody></table>
+		
+			</div>
+        <div class="noindex">
+        <ul id="menu">
+<li><a href="/pages/default.aspx" class="no-drop">HOME</a></li>
+<li><a href="/aboutus/Pages/default.aspx" class="drop">ABOUT US</a> 
+    <div class="dropdown_1column"> 
+        <div class="col_1"> 
+            <ul class="simple"> 
+                <li><a href="/aboutus/pages/leadership.aspx">Leadership</a></li> 
+                <li><a href="/aboutus/pages/news.aspx">News</a></li> 
+                <li><a href="/aboutus/pages/our-history.aspx">Our History</a></li> 
+            </ul> 
+        </div> 
+    </div> 
+</li> 
+<li><a href="/services/Pages/default.aspx" class="drop">SERVICES</a> 
+    <div class="dropdown_1column"> 
+        <div class="col_1"> 
+            <ul class="simple"> 
+                <li><a href="/services/pages/investor-services.aspx">Investor Services</a></li> 
+                <li><a href="/services/pages/corporate-and-occupier-services.aspx">Corporate &amp; Occupier Services</a></li> 
+                <li><a href="/services/Pages/Tenant-Services.aspx">Tenant &amp; Business Services</a></li>
+            </ul> 
+        </div> 
+    </div> 
+</li>
+<li><a href="/people/Pages/default.aspx" class="drop">PEOPLE</a> 
+<div class="dropdown_1column"> 
+        <div class="col_1"> 
+            <ul class="simple"> 
+                <li><a href="/people/Pages/Community-Involvement.aspx">Community Involvement</a></li> 
+                <li><a href="/people/Pages/Industry-Involvement.aspx">Industry Involvement</a></li> 
+            </ul> 
+        </div> 
+    </div> 
+</li>
+<li><a href="/researchperspectives/Pages/default.aspx" class="no-drop">RESEARCH</a> 
+    </li>
+<li><a href="/Pages/Property-Search.aspx" class="no-drop">LISTING SEARCH</a> 
+</li>
+</ul>
+
+    	</div>
+      	</div>			
+	
+	<!-- top navigation area -->
+	<div class="s4-notdlg">
+		<!-- top navigation publishing data source -->
+		
+		 
+        <!-- User Control for Mega Drop Down Menu -->
+       
+		<!-- top navigation menu (set to use the new Simple Rendering)-->
+		<div style="display: none">
+		 </div>	
+	</div>
+
+	<!-- page editing status bar -->
+	<div class="s4-notdlg">
+		<div id="s4-statusbarcontainer" class="s4-notdlg">
+			<div style="display: none;" id="pageStatusBar" class="s4-status-s1"></div>
+		</div>
+	</div>
+
+	<!-- styles needed to have left nav to the left of the main area -->
+	<div id="s4-leftpanel" class="s4-notdlg">
+		<!-- The quick launch bar / left navigation -->
+		
+						
+			<div id="zz1_CurrentNav" class="s4-ql">
+	<div class="menu vertical menu-vertical">
+		<ul class="root static">
+			<li class="static"><a class="static menu-item" href="/_layouts/viewlsts.aspx?BaseType=1"><span class="additional-background"><span class="menu-item-text">Libraries</span></span></a></li>
+		</ul>
+	</div>
+</div>			
+		
+		
+		<!-- The small menu attached Quick Launch bar. Used only on very specific pages -->
+		
+	</div>
+	
+	<!-- s4-ca is the main body div -->
+	<div class="s4-ca">
+
+		<div class="s4-notdlg">
+			<!-- links for I like it and Tags and Notes -->
+			<!-- use ControlID="GlobalSiteLink3" for larger icons or remove this line entirely for no icons
+			 -->
+		</div>
+		
+		<div class="s4-notdlg">
+			<!-- page title -->
+						
+		</div>
+		
+		<!-- place a table around this to handle funky markup in _Layouts/areacachesettings.aspx (if you want) -->
+		
+		
+		<div>
+			<!-- page content loads from the pages and pages layout -->
+			
+
+<style>
+body #s4-leftpanel
+{
+display: none;
+}
+.s4-ca
+{
+margin-left: 0px;
+}</style>
+
+<div id="tophome"></div>
+<div id="middleholder">
+	<div id="homecontentarea">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td id="MSOZoneCell_WebPartWPQ2" class="s4-wpcell-plain" valign="top"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td valign="top"><div webpartid="38c03e7b-ecdb-4a47-ad82-8b1b781bb217" haspers="false" id="WebPartWPQ2" width="100%" class="ms-WPBody noindex" allowdelete="false" style=""><h1>Market-Leading Commercial Real Estate Solutions</h1>
+<p class="ms-rteElement-P">Cushman &amp; Wakefield | NorthMarq is the preeminent commercial real estate firm in the Twin Cities, offering the best combination of smart, local professionals with connections and access across the globe.</p>
+
+<p class="ms-rteElement-P">We build trust by delivering innovative real estate solutions that ultimately create value and deliver results for clients, within our communities and for our employees. </p>
+<p class="ms-rteElement-P">Our approach has helped us form longer, stronger client and employee relationships measured not just in years—but in decades. <a href="/people/Pages/default.aspx">Contact any of our commercial real estate professionals</a> to start building your relationship now.</p></div></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+	
+		<div id="homeleftcol">
+		
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td id="MSOZoneCell_WebPartWPQ6" class="s4-wpcell-plain" valign="top"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody><tr class="ms-WPHeader">
+						<td class="ms-wpTdSpace" align="left">&nbsp;</td><td title="News Releases - Displays a dynamic view of content from your site." id="WebPartTitleWPQ6" class="ms-WPHeaderTd"><h3 style="text-align:justify;" class="ms-standardheader ms-WPTitle"><nobr><span>News Releases</span><span id="WebPartCaptionWPQ6"></span></nobr></h3></td><td class="ms-WPHeaderTdSelection"><span class="ms-WPHeaderTdSelSpan"><input id="SelectionCbxWebPartWPQ6" class="ms-WPHeaderCbxHidden" title="Select or deselect News Releases Web Part" onblur="this.className='ms-WPHeaderCbxHidden'" onfocus="this.className='ms-WPHeaderCbxVisible'" onkeyup="WpCbxKeyHandler(event);" onmouseup="WpCbxSelect(event); return false;" onclick="TrapMenuClick(event); return false;" type="checkbox"></span></td><td class="ms-wpTdSpace" align="left">&nbsp;</td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr>
+				<td class="" valign="top"><div webpartid="8bc234c7-5376-49b6-906b-6da5cb1a74f6" haspers="false" id="WebPartWPQ6" width="100%" class="ms-WPBody noindex ms-wpContentDivSpace" allowdelete="false" style=""><div id="cbqwpctl00_ctl21_g_8bc234c7_5376_49b6_906b_6da5cb1a74f6" class="cbq-layout-main"><ul class="dfwp-column dfwp-list" style="width:100%"><li class="dfwp-item"><div class="item"><div class="link-item"><a href="http://dev.cushwakenm.com/aboutus/Pages/20111121.aspx" title="">Normandale Lake Office Park completes two new leases, one expansion totaling more than 80,000 sq. ft.</a><div class="description"></div></div></div></li><li class="dfwp-item"><div class="item"><div class="link-item"><a href="http://dev.cushwakenm.com/aboutus/Pages/20111021.aspx" title="">Cushman &amp; Wakefield/NorthMarq Real Estate Services Sees Activity at Area Schools</a><div class="description"></div></div></div></li></ul></div></div></td>
+			</tr>
+		</tbody></table><div class="ms-PartSpacingVertical"></div></td>
+	</tr><tr>
+		<td id="MSOZoneCell_WebPartWPQ7" class="s4-wpcell-plain" valign="top"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody><tr class="ms-WPHeader">
+						<td class="ms-wpTdSpace" align="left">&nbsp;</td><td title="Compass Points Recent Posts - Displays an RSS feed." id="WebPartTitleWPQ7" class="ms-WPHeaderTd"><h3 style="text-align:justify;" class="ms-standardheader ms-WPTitle"><nobr><span>Compass Points Recent Posts</span><span id="WebPartCaptionWPQ7"></span></nobr></h3></td><td class="ms-WPHeaderTdSelection"><span class="ms-WPHeaderTdSelSpan"><input id="SelectionCbxWebPartWPQ7" class="ms-WPHeaderCbxHidden" title="Select or deselect Compass Points Recent Posts Web Part" onblur="this.className='ms-WPHeaderCbxHidden'" onfocus="this.className='ms-WPHeaderCbxVisible'" onkeyup="WpCbxKeyHandler(event);" onmouseup="WpCbxSelect(event); return false;" onclick="TrapMenuClick(event); return false;" type="checkbox"></span></td><td class="ms-wpTdSpace" align="left">&nbsp;</td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr>
+				<td class="" valign="top"><div webpartid="f68df394-0c26-45dc-871e-a2a187241629" haspers="false" id="WebPartWPQ7" width="100%" class="ms-WPBody noindex ms-wpContentDivSpace" allowdelete="false" style=""><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><div id="rssFeedWPDiv_ctl00_ctl21_g_f68df394_0c26_45dc_871e_a2a187241629" style="padding-top:5px;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><!--?xml version="1.0" encoding="utf-8"?--><div class="slm-layout-main" xmlns:atom2="http://purl.org/atom/ns#" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rss1="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rssfeed="urn:schemas-microsoft-com:sharepoint:RSSAggregatorWebPart" xmlns:x="http://www.w3.org/2001/XMLSchema"><p class="ms-rteElement-P">Our Compass report and Compass Points blog provide market intelligence, perspectives and data about the commercial real estate industry in the Minneapolis-St. Paul, Minn., metro area and beyond.</p><div class="groupheader item medium" style="display:none;"><a href="http://compasspoints.cushwakenm.com">C&amp;W/NorthMarq Compass Points</a></div><div class="item link-item"><a href="javascript:ToggleItemDescription('g_f68df394_0c26_45dc_871e_a2a1872416291')">The State of The North American Aerospace Industry</a><div id="g_f68df394_0c26_45dc_871e_a2a1872416291" class="description" style="display:none; text-align:left;" align="left">
+                     - According to Cushman &amp; Wakefield Research: “The aerospace industry has seen significant growth in North America over the last decade, particularly in the commercial sector. Despite a slowdown in the global economy, and although oil prices have fallen, demand for … <a href="http://compasspoints.cushwakenm.com/2015/07/29/the-state-of-the-north-american-aerospace-industry/">Continue reading <span class="meta-nav">?</span></a><img alt="" src="http://pixel.wp.com/b.gif?host=compasspoints.cushwakenm.com&amp;blog=35813742&amp;post=1166&amp;subd=chicagoretail&amp;ref=&amp;feed=1" border="0" height="1" width="1"><div class="description"><a href="http://compasspoints.cushwakenm.com/2015/07/29/the-state-of-the-north-american-aerospace-industry/">More...</a></div></div></div><div class="item link-item"><a href="javascript:ToggleItemDescription('g_f68df394_0c26_45dc_871e_a2a1872416292')">Capital Markets Update</a><div id="g_f68df394_0c26_45dc_871e_a2a1872416292" class="description" style="display:none; text-align:left;" align="left">
+                     - According to Cushman &amp; Wakefield Equity, Debt and Structured Finance: “Through May, year-to-date commercial real estate sales activity was up 32% compared to the same period in 2014. Cap rates continued to trend flat or down and commercial real estate … <a href="http://compasspoints.cushwakenm.com/2015/07/21/capital-markets-update-8/">Continue reading <span class="meta-nav">?</span></a><img alt="" src="http://pixel.wp.com/b.gif?host=compasspoints.cushwakenm.com&amp;blog=35813742&amp;post=1160&amp;subd=chicagoretail&amp;ref=&amp;feed=1" border="0" height="1" width="1"><div class="description"><a href="http://compasspoints.cushwakenm.com/2015/07/21/capital-markets-update-8/">More...</a></div></div></div><div class="item link-item"><a href="javascript:ToggleItemDescription('g_f68df394_0c26_45dc_871e_a2a1872416293')">The Cold Storage Five</a><div id="g_f68df394_0c26_45dc_871e_a2a1872416293" class="description" style="display:none; text-align:left;" align="left">
+                     - Can’t see the image above? Click here.Filed under: Industrial<img alt="" src="http://pixel.wp.com/b.gif?host=compasspoints.cushwakenm.com&amp;blog=35813742&amp;post=1140&amp;subd=chicagoretail&amp;ref=&amp;feed=1" border="0" height="1" width="1"><div class="description"><a href="http://compasspoints.cushwakenm.com/2015/07/14/1140/">More...</a></div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></div></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+		
+		</div>
+		<div id="homerightcol">
+		
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td id="MSOZoneCell_WebPartWPQ5" class="s4-wpcell-plain" valign="top"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody><tr class="ms-WPHeader">
+						<td class="ms-wpTdSpace" align="left">&nbsp;</td><td title="Recent Transactions - Displays a dynamic view of content from your site." id="WebPartTitleWPQ5" class="ms-WPHeaderTd"><h3 style="text-align:justify;" class="ms-standardheader ms-WPTitle"><nobr><span>Recent Transactions</span><span id="WebPartCaptionWPQ5"></span></nobr></h3></td><td class="ms-WPHeaderTdSelection"><span class="ms-WPHeaderTdSelSpan"><input id="SelectionCbxWebPartWPQ5" class="ms-WPHeaderCbxHidden" title="Select or deselect Recent Transactions Web Part" onblur="this.className='ms-WPHeaderCbxHidden'" onfocus="this.className='ms-WPHeaderCbxVisible'" onkeyup="WpCbxKeyHandler(event);" onmouseup="WpCbxSelect(event); return false;" onclick="TrapMenuClick(event); return false;" type="checkbox"></span></td><td class="ms-wpTdSpace" align="left">&nbsp;</td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr>
+				<td class="" valign="top"><div webpartid="f5b39bac-0d53-4076-9d72-fcf4f18b7b1c" haspers="false" id="WebPartWPQ5" width="100%" class="ms-WPBody noindex ms-wpContentDivSpace" allowdelete="false" style=""><div id="cbqwpctl00_ctl21_g_f5b39bac_0d53_4076_9d72_fcf4f18b7b1c" class="cbq-layout-main"><ul class="dfwp-column dfwp-list" style="width:100%"><li class="dfwp-item"><div class="item"><div class="image-area-left"><a href="http://dev.cushwakenm.com/aboutus/Pages/20111031.aspx"><img class="image" src="/NewsDealsImages/2011/PlymouthWoods_rollup.jpg" title=""></a></div><div class="link-item"><a href="http://dev.cushwakenm.com/aboutus/Pages/20111031.aspx" title="">GS Media and Events leases 15,000 sq. ft. at Plymouth Woods Office Center</a><div class="description"></div></div></div></li><li class="dfwp-item"><div class="item"><div class="image-area-left"><a href="http://dev.cushwakenm.com/aboutus/Pages/20111005.aspx"><img class="image" src="/NewsDealsImages/2011/EdinboroughCorporateCenter_rollup.jpg" title=""></a></div><div class="link-item"><a href="http://dev.cushwakenm.com/aboutus/Pages/20111005.aspx" title="">Wells Fargo Bank signs lease for new Dealer Services space</a><div class="description"></div></div></div></li></ul></div></div></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+		
+		</div>
+		<div style="clear: both"></div>
+	</div>
+
+		<div id="middlehome">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td id="MSOZoneCell_WebPartWPQ3" class="s4-wpcell-plain" valign="top"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td valign="top"><div webpartid="80019949-e573-4860-9aff-48759f17dee3" haspers="false" id="WebPartWPQ3" width="100%" class="ms-WPBody noindex" allowdelete="false" style=""><div class="cwn-WPHeader">
+<img class="ms-rtePosition-1" src="/PublishingImages/findPerson-icon_red_53px.png" alt="" style="margin: 0px 5px;">
+<h3 class="ms-standarheader ms-WPTitle cwn-WPHeaderTitle ">
+<nobr>
+<span>Find A Person</span>
+</nobr>
+</h3>
+</div>
+<div class="cwn-WPHeaderContent">
+<p>?If you’re looking for a partner who can guide you through even the most difficult real estate challenge, we can help. </p>
+<p>Contact any of our<span> <span><a href="/Pages/People.aspx"><font color="#0072bc">commercial real estate experts</font></a></span> </span>to get started. </p>
+</div>
+
+
+</div></td>
+			</tr>
+		</tbody></table><div class="ms-PartSpacingVertical"></div></td>
+	</tr><tr>
+		<td id="MSOZoneCell_WebPartWPQ4" class="s4-wpcell-plain" valign="top"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td valign="top"><div webpartid="9cae32ed-2f5d-42b0-af83-9f1803abea7b" haspers="false" id="WebPartWPQ4" width="100%" class="ms-WPBody noindex" allowdelete="false" style=""><div class="cwn-WPHeader">
+<img class="ms-rtePosition-1" src="/PublishingImages/findProperty-icon_red_53px.png" alt="" style="margin: 0px 5px;">
+<h3 class="ms-standarheader ms-WPTitle cwn-WPHeaderTitle">
+<nobr>
+<span>Find A Property</span>
+</nobr>
+</h3>
+
+<div class="cwn-WPHeaderContent">
+<p>We manage nearly 400 commercial assets in the Twin Cities and represent investors on nearly 1,500 office, industrial, retail, land sites and hospitality listings that are for lease or for sale.</p>
+
+<ul>
+<li><a href="http://www.cushwakenm.com/Pages/Property-Search.aspx" target="_blank">FOR SALE OR LEASE</a></li>
+<li><a href="http://propertydirect.cushwakenm.com/" target="_blank">MANAGED PROPERTIES</a></li>
+</ul>
+</div>
+
+
+</div>
+</div></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+		<div id="middlehomeright">
+			<menu class="ms-SrvMenuUI">
+	<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+	</ie:menuitem>
+</menu>
+
+		</div>
+		<!--<img src="../../Style Library/Images/homeside.jpg" alt="" />-->
+		<div style="clear: both"></div>
+	</div>
+</div>
+<div style="clear: both"></div>
+
+<style>
+body #s4-leftpanel
+{
+display: none;
+}
+.s4-ca
+{
+margin-left: 0px;
+}
+</style>
+
+
+		</div>
+	</div>
+
+	<!-- footer - this is purely optional -->
+	<div id="footer" class="s4-notdlg">
+		<div id="footerleft">Copyright ©2011 NorthMarq Real Estate Services, LLC. All rights Reserved.</div>
+		<div id="footerright"><a href="http://apppropertydirect.cushwakenm.com">TENANT LOG-IN</a> &nbsp;|&nbsp; <a href="http://thelink.marquettere.com">EMPLOYEE LOG-IN</a></div>
+		<div style="clear: both"></div>
+		
+	</div>
+
+	<!-- the developer dashboard can be turned on by administrators and shows debuging and performance info for the page -->
+	<div id="DeveloperDashboard" class="ms-developerdashboard">
+		
+	</div>
+
+  </div>
+  </div>
+</div>
+
+<!-- =====  End scrolling body area with these two previous div's ============================================================ -->
+
+<!-- The form digest security control used to for security validation on forms -->
+
+	
+
+
+<!-- =====  Hidden Placeholders ============================================================ -->
+
+
+<!-- Handle Search "enter" key and back button -->
+<input name="__spDummyText1" style="display:none;" size="1" type="text">
+<input name="__spDummyText2" style="display:none;" size="1" type="text">
